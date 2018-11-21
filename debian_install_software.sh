@@ -8,6 +8,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 apt-get update && \
+apt-get upgrade && \
 apt-get install \
 	bash \
 	apt-transport-https \
@@ -33,12 +34,6 @@ add-apt-repository \
 	"deb [arch=amd64] https://download.docker.com/linux/debian \
 	$(lsb_release -cs) \
 	stable" && \
-curl -fsSL https://packages.sury.org/php/apt.gpg | sudo apt-key add - && \
-add-apt-repository \
-	"deb https://packages.sury.org/php/ \
-	$(lsb_release -cs) \
-	main" && \
-apt-get update && \
 apt-get install docker-ce -y && \
 curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
 chmod +x /usr/local/bin/docker-compose && \
