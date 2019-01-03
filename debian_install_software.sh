@@ -11,6 +11,7 @@ apt-get update && \
 apt-get upgrade -y && \
 apt-get install \
 	bash \
+	man \
 	apt-transport-https \
 	ca-certificates \
 	curl \
