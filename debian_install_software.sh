@@ -18,6 +18,7 @@ apt-get install \
 	gnupg2 \
 	software-properties-common \
 	git \
+	screen \
 	autoconf \
 	bison \
 	libxml2-dev \
