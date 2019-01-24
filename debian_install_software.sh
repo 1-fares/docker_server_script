@@ -14,7 +14,7 @@ apt-get upgrade -y && \
 apt-get remove -y \
 	nano \
 	&& \
-apt-get install \
+apt-get install -y \
 	bash \
 	vim \
 	man \
@@ -36,7 +36,6 @@ apt-get install \
 	zlib1g-dev \
 	libzip-dev \
 	g++ \
-	-y \
 	&& \
 echo "startup_message off" >> /etc/screenrc && \
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
