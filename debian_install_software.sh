@@ -9,9 +9,14 @@ fi
 
 apt-get update && \
 apt-get upgrade -y && \
+apt-get remove -y && \
+	nano \
+	&& \
 apt-get install \
 	bash \
+	vim \
 	man \
+	less \
 	apt-transport-https \
 	ca-certificates \
 	curl \
@@ -31,6 +36,7 @@ apt-get install \
 	g++ \
 	-y \
 	&& \
+echo "startup_message off" >> /etc/screenrc && \
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
 add-apt-repository \
 	"deb [arch=amd64] https://download.docker.com/linux/debian \
