@@ -1,4 +1,6 @@
 #!/bin/sh
+# This can be run like this:
+# source <(curl -s https://raw.githubusercontent.com/1-fares/docker_server_script/master/debian_install_software.sh)
 
 set -x
 
@@ -9,7 +11,7 @@ fi
 
 apt-get update && \
 apt-get upgrade -y && \
-apt-get remove -y && \
+apt-get remove -y \
 	nano \
 	&& \
 apt-get install \
