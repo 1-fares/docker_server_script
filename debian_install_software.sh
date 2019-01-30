@@ -35,6 +35,7 @@ apt-get install -y \
 	libzip-dev \
 	g++ \
 	&& \
+echo "" > /etc/motd && \
 echo "startup_message off" >> /etc/screenrc && \
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
 add-apt-repository \
