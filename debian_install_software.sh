@@ -16,6 +16,7 @@ apt-get install -y \
 	vim \
 	man \
 	less \
+	htop \
 	apt-transport-https \
 	ca-certificates \
 	curl \
