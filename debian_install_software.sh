@@ -1,6 +1,6 @@
 #!/bin/sh
 # This can be run like this:
-# apt update && apt install -y ca-certificates && source <(curl -s https://raw.githubusercontent.com/1-fares/docker_server_script/master/debian_install_software.sh)
+# apt update && apt install -y ca-certificates curl && source <(curl -s https://raw.githubusercontent.com/1-fares/docker_server_script/master/debian_install_software.sh)
 
 set -x
 
