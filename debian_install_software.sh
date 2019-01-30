@@ -11,9 +11,6 @@ fi
 
 apt-get update && \
 apt-get upgrade -y && \
-apt-get remove -y \
-	nano \
-	&& \
 apt-get install -y \
 	bash \
 	vim \
