@@ -2,12 +2,12 @@
 # This can be run like this:
 # apt update && apt install -y ca-certificates curl && source <(curl -s https://raw.githubusercontent.com/1-fares/docker_server_script/master/debian_install_software.sh)
 
-set -x
-
 if [ "$(id -u)" != "0" ]; then
 	echo "This script must be run as root" 1>&2
 	exit 1
 fi
+
+set -x
 
 apt-get update && \
 apt-get remove nano -y && \
