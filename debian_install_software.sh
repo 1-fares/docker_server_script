@@ -10,7 +10,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 apt-get update && \
-apt-get remove nano && \
+apt-get remove nano -y && \
 apt-get upgrade -y && \
 apt-get install -y \
 	bash \
